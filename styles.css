@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  background-color: black;
+}
+h1{
+  color: white;
+  font-size: 6rem;
+  font-family: sans-serif;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+h2{
+  color: white;
+  /* font-size: 2rem; */
+  font-family: sans-serif;
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%,-60%);
+}
+
+body{
+  background-image: url("bgg.jpg");
+  background-size: cover;
+}
+
+span{
+  opacity: 0;
+  transition: all 0.5s ease;
+   display: inline-block;  /* span is a inline Html element so we have to make it inline- block so that it gains the ability to move around  */
+  transform:translateY(50px);
+}
+span.fade{
+opacity: 1;
+transform: translateY(0px);
+color: pink;
+}
